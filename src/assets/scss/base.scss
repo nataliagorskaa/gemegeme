@@ -2,9 +2,9 @@
 @import './_navigation';
 
 
-body {
+html body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe Ui",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: 500;
     margin: 0;
-    background-color: #f8f9fa;
+    background-color: $background;
 }
