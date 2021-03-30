@@ -1,5 +1,5 @@
 import React from 'react'
-import {PostMasonry, MasonryPost} from '../components/common/index'
+import {PostMasonry, MasonryPost, PostGrid} from '../components/common/index'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
 
@@ -58,7 +58,7 @@ export default function Home () {
                 <section className="container">
                     <div className="row">
                         <h1>Recent Posts</h1>
-                        
+                        <PostGrid posts={recentPosts} />
                     </div>
                 </section>
             </section>
