@@ -1,14 +1,12 @@
 import React from 'react'
-import {PostMasonry, MasonryPost, PostGrid} from '../components/common/index'
+import {PostMasonry, MasonryPost, PostGrid} from '../components/common'
 import trending from '../assets/mocks/trending'
 import featured from '../assets/mocks/featured'
 
-
 const trendingConfig = {
-      1: {
-          gridArea: '1 / 2 / 3 / 3'
-
-      }
+    1: {
+        gridArea: '1 / 2 / 3 / 3',
+    }
 }
 
 const featuredConfig = {
@@ -33,8 +31,6 @@ const mergeStyles = function (posts, config){
         post.description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.'
     })
 }
-
-
 
 const recentPosts = [...trending, ...featured, ...featured]
 

@@ -4,31 +4,44 @@ import { Avatar } from 'antd';
 
 const navLinks = [
     {
-      title: 'Home',
+      title: 'Blog',
       path: '/'
     },
     {
-      title: 'Contact Us',
-      path: '/contact-us'
+      title: 'Web Dev',
+      path: '/web-dev'
     },
     {
-      title: 'Blog',
-      path: '/blog'
+      title: 'Cloud',
+      path: '/cloud'
     },
-
+    {
+      title: 'Algorithms',
+      path: '/algos'
+    },
+    {
+      title: 'Brain Hacking',
+      path: '/health'
+    },
     {
       title: 'Login',
       path: '/login'
     },
+    {
+      title: 'Post Viewer',
+      path: '/post'
+    }
   ]
 
 export default function Navigation () {
     const [menuActive, setMenuActive] = useState(false)
 
     return (
-    <nav className= "site-navigation" role="navigation">
-        <span className="menu-title">GEMEGEME</span>
-        <div className={ `menu-content-container ${menuActive && 'active'}` }>
+    <nav className={`site-navigation ${menuActive && 'active'}`} role="navigation">
+        <span className="menu-title">My Awesome Blog</span>
+        <div
+            className="menu-content-container"
+        >
             <ul>
             { navLinks.map((link, index) => (
                 <li key={index}>
@@ -37,13 +50,13 @@ export default function Navigation () {
                 ))
             }
             </ul>
-            <span className="menu-avatar-container">
+            <div className="menu-avatar-container">
                 <Avatar size={50} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                <span className="menu-avatar-name">Me</span>
-            </span>
+                <span className="menu-avatar-name">Miguel Coder</span>
+            </div>
         </div>
         <i 
-            className="ion-ios-menu"
+            className="icon ionicons ion-ios-menu"
             onClick={(ev) => setMenuActive(!menuActive)}
         />
     </nav>
