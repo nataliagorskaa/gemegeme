@@ -50,10 +50,7 @@ export default function Navigation () {
                 ))
             }
             </ul>
-            <div className="menu-avatar-container">
-                <Avatar size={50} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                <span className="menu-avatar-name">Miguel Coder</span>
-            </div>
+            
         </div>
         <i 
             className="icon ionicons ion-ios-menu"
